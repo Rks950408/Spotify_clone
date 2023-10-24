@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Signika:wght@500&display=swap');
+body{
+    background-image: linear-gradient(rgb(59, 59, 59),rgb(48, 48, 48),rgb(41, 41, 41),rgb(35, 35, 35),rgb(35, 35, 35),rgb(29, 29, 29),rgb(27, 27, 27),rgb(15, 15, 15) );
+    font-family: 'Signika', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-family: 'Signika', sans-serif;
+}
+nav ul{
+         display: flex;     
+         align-items: center;                       /*to make the elments horizontal*/
+         list-style-type: none;
+         height: 70px;
+         background-color: black;
+         color: white;
+         font-size: 25px;
+}
+nav ul li{
+       padding: 10px;
+}
+.brand img{
+             width: 60px;color: white;   
+             padding-left: 10px;
+             padding-right: 18px;      
+}
+.brand{
+    align-items: center; display: flex;
+    font-weight: bold;
+    font-size: 35.5px;
+}
+.container{
+    min-height: 82vh;
+   background-color: black;
+    color:black;
+    display: flex; 
+    width: 70%; 
+    margin: 23px auto;
+    border-radius: 12px;
+    background-image: url('bg4.jpg'); 
+}
+.bottom{
+    border-top: 1px solid rgb(77, 76, 76);
+     position :sticky;height: 120px;
+     background-color: black;
+     bottom: 0;
+     color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     cursor: pointer;
+}
+.icons i{
+    padding: 11px;
+    margin-bottom: 10px;
+}
+#myProgressBar
+{
+    cursor: pointer;
+    width: 50vw;
+}
+.songItemContainer
+{
+    position: absolute;
+    right: 20vw;
+    margin-top: 5px;
+    flex-direction:column;
+    height:600px;
+    overflow-x: hidden;
+    overflow-y: auto;  
+}
+.songItemContainer :hover
+{
+    opacity: 1.0;
+    background-color: black;
+    color: aliceblue;
+}
+.songItem
+{
+ height: 50px;
+ width: 350px;
+ margin: 12px 0;
+ border: 1px solid black;
+ border-radius: 25px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.songItem img{
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 50%;
+}
+.timestamp{
+    margin: 0 23px; 
+}
+.timestamp i{
+    cursor: pointer;
+}
+.songInfo 
+{
+    padding-top: 0px;
+    position: absolute;
+    left: 0;
+}
+.songInfo img
+{
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+   margin-left: 30px; 
+   padding-right: 15px;
+}
